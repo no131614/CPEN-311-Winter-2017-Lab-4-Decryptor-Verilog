@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 7",
+		"os_version" : "6.2"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "none",
+		"error_message" : "Access Violation at 0X000000005EB1FF66",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t 0x5eb1ff65: QtGui4 + 0x6ff65 (??1QWidget@@UEAA@XZ + 0x4a5)\n\t 0x5eb208f5: QtGui4 + 0x708f5 (??1QWidgetPrivate@@UEAA@XZ + 0x535)\n\t 0x5fb0e512: QtCore4 + 0x14e512 (?deleteChildren@QObjectPrivate@@QEAAXXZ + 0xa2)\n\t 0x5eb20267: QtGui4 + 0x70267 (??1QWidget@@UEAA@XZ + 0x7a7)\n\t0x7ffba8b6a959: SYS_QUI + 0x3a959 (??1QUI_MDI_SUB_WND@@UEAA@XZ + 0xb9)\n\t 0x5fb0fd14: QtCore4 + 0x14fd14 (?event@QObject@@UEAA_NPEAVQEvent@@@Z + 0xa4)\n\t 0x5eb25de2: QtGui4 + 0x75de2 (?event@QWidget@@MEAA_NPEAVQEvent@@@Z + 0xd42)\n\t 0x5eadc765: QtGui4 + 0x2c765 (?notify_helper@QApplicationPrivate@@QEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0xf5)\n\t 0x5eadc3ff: QtGui4 + 0x2c3ff (?notify@QApplication@@UEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x17bf)\n\t 0x5fafaaab: QtCore4 + 0x13aaab (?notifyInternal@QCoreApplication@@AEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x7b)\n\t 0x5fafc772: QtCore4 + 0x13c772 (?sendPostedEvents@QCoreApplicationPrivate@@SAXPEAVQObject@@HPEAVQThreadData@@@Z + 0x2b2)\n\t 0x5f9f58e8: QtCore4 + 0x358e8 (?d_func@QEventDispatcherWin32@@AEBAPEBVQEventDispatcherWin32Private@@XZ + 0x268)\n\t 0x5f9f6f20: QtCore4 + 0x36f20 (?terminate@QThread@@QEAAXXZ + 0xa0)\n\t0x7ffb7fec8e50: sld_redq + 0x8e50\n\t0x7ffb7feca073: sld_redq + 0xa073\n\t0x7ffb7fec8cfe: sld_redq + 0x8cfe\n\t0x7ffb7fec9d53: sld_redq + 0x9d53\n\t0x7ffb7fec906e: sld_redq + 0x906e\n\t0x7ffb7feca2c3: sld_redq + 0xa2c3\n\t 0x5fb0e512: QtCore4 + 0x14e512 (?deleteChildren@QObjectPrivate@@QEAAXXZ + 0xa2)\n\t 0x5eb20267: QtGui4 + 0x70267 (??1QWidget@@UEAA@XZ + 0x7a7)\n\t0x7ffb7fec9a94: sld_redq + 0x9a94\n\t 0x5fb0e512: QtCore4 + 0x14e512 (?deleteChildren@QObjectPrivate@@QEAAXXZ + 0xa2)\n\t 0x5eb20267: QtGui4 + 0x70267 (??1QWidget@@UEAA@XZ + 0x7a7)\n\t0x7ffb7feca037: sld_redq + 0xa037\n\t 0x5fb0e512: QtCore4 + 0x14e512 (?deleteChildren@QObjectPrivate@@QEAAXXZ + 0xa2)\n\t 0x5eb20267: QtGui4 + 0x70267 (??1QWidget@@UEAA@XZ + 0x7a7)\n\t0x7ffb7fec9db7: sld_redq + 0x9db7\n\t 0x5fb0fd14: QtCore4 + 0x14fd14 (?event@QObject@@UEAA_NPEAVQEvent@@@Z + 0xa4)\n\t 0x5eb25de2: QtGui4 + 0x75de2 (?event@QWidget@@MEAA_NPEAVQEvent@@@Z + 0xd42)\n\t 0x5eed0f10: QtGui4 + 0x420f10 (?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z + 0x280)\n\t 0x5eadc765: QtGui4 + 0x2c765 (?notify_helper@QApplicationPrivate@@QEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0xf5)\n\t 0x5eadc3ff: QtGui4 + 0x2c3ff (?notify@QApplication@@UEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x17bf)\n\t 0x5fafaaab: QtCore4 + 0x13aaab (?notifyInternal@QCoreApplication@@AEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x7b)\n\t 0x5fafc772: QtCore4 + 0x13c772 (?sendPostedEvents@QCoreApplicationPrivate@@SAXPEAVQObject@@HPEAVQThreadData@@@Z + 0x2b2)\n\t 0x5fb29758: QtCore4 + 0x169758 (?processEvents@QEventDispatcherWin32@@UEAA_NV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0xbf8)\n\t0x7ffbd4531c23: USER32 + 0x11c23 (CallWindowProcW + 0x4f3)\n\t0x7ffbd453156b: USER32 + 0x1156b (DispatchMessageW + 0x1bb)\n\t 0x5fb28f42: QtCore4 + 0x168f42 (?processEvents@QEventDispatcherWin32@@UEAA_NV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x3e2)\n\t 0x5eb4f864: QtGui4 + 0x9f864 (?openPopup@QApplicationPrivate@@QEAAXPEAVQWidget@@@Z + 0x204)\n\t 0x5faf6a7b: QtCore4 + 0x136a7b (?exec@QEventLoop@@QEAAHV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x22b)\n\t 0x5faf9cbf: QtCore4 + 0x139cbf (?exec@QCoreApplication@@SAHXZ + 0xdf)\n\t0x7ff688bc197b: quartus + 0x197b\n\t0x7ffba932cad8: CCL_MSG + 0xcad8 (?msg_initialize_out_of_memory_handler@@YAXXZ + 0x378)\n\t0x7ffba932e20c: CCL_MSG + 0xe20c (?msg_set_stack_size@@YAXH@Z + 0x7c)\n\t0x7ffbaa565aa0: ccl_mem + 0x5aa0 (?mem_gen_get_project_output_directory@@YAPEBDXZ + 0x64)\n\t0x7ffba932c721: CCL_MSG + 0xc721 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff688bc2507: quartus + 0x2507\n\t0x7ff688bc1e74: quartus + 0x1e74\n\t0x7ffbd4698363: KERNEL32 + 0x8363 (BaseThreadInitThunk + 0x13)\n\t0x7ffbd6fe70d0: ntdll + 0x670d0 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "14.1.0",
+		"build" : "186",
+		"edition" : "Web Edition"
+	}
+}

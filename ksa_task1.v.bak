@@ -1,0 +1,55 @@
+module ksa_task1(clk, reset_n, wren, address);
+  
+  input clock, reset;
+  output reg [7:0] address;
+  output reg wren;
+  
+  logic [7:0] i;
+  logic [2:0] state;
+  
+  parameter s_init = 3'b001;
+  parameter s_increment = 3'b010;
+  parameter s_finish = 3'b100;
+
+
+  always_ff @(posedge clk, posedge reset_n)
+  
+	if(reset)
+	begin
+		state <= s_init;
+		i <= 8'b0;
+	end
+  
+	else
+	begin
+		case(state)
+		
+			s_init:
+				begin
+					state <= s_increment;
+					wren <= 1'b1;
+					i <= 8'b0;
+				end
+				
+			s_increment:
+				begin
+					wren <= 1'b1;
+					address <= i;
+					i <= i + 8'b1;
+				
+					if(i == 255)
+						begin
+						state <= s_finish;
+						end
+				end
+			
+			s_finish:
+				begin
+				//Do Nothing for now
+				
+				end
+		endcase
+	end
+
+	
+endmodule
